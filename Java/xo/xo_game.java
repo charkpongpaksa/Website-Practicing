@@ -55,7 +55,6 @@ public class xo_game {
     public boolean checkDraw() {
 
         //checking a draw
-        boolean full = false;
         int count = 0;
         for (row = 0; row < 3; row++) {
             for (column = 0; column < 3; column++) {
@@ -118,8 +117,9 @@ public class xo_game {
                 break;
             }
         }
-    }
 
+        scanner.close();
+    }
 
     public static void main(String[] args) {
         System.out.println("Welcome to the X/O game.");
